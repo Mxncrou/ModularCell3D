@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="claude:viewport-fit-sides" content="cover">
+    <title>Cell Module</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+    <link rel="stylesheet" href="Cell.css">
+  </head>
+
+  <body>
+    <canvas id="view" aria-label="3D view of cells"></canvas>
+
+    <header>
+      <h1>Cell</h1>
+    </header>
+
+    <div class="bar">
+      <button id="add" type="button">Add cell</button>
+      <button id="rotate" type="button" class="ghost" disabled>Rotate</button>
+      <button id="flip" type="button" class="ghost" disabled>Flip</button>
+      <button id="delete" type="button" class="ghost" disabled>Delete</button>
+      <output id="label">1 cell</output>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="Cell.js"></script>
+  </body>
+</html>
